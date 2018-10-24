@@ -19,7 +19,7 @@ process.stdin.on( 'readable', function() {
                 process.exit();
                 break;
             // Sprawdz czy wartosc jest rowna stringowi
-            case 'lang':
+            case 'LANG':
                 // Wyswietl jezyk Node.JS
                 process.stdout.write( 'Node.JS language: ' + process.env.lang /*or process.env[LANG] to get value of the object the same way*/ + '\n' );
                 // Zatrzymaj proces
